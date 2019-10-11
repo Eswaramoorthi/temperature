@@ -1,5 +1,4 @@
 class ReadingsController < ApplicationController
-  
   before_action :set_thermostat
   before_action :set_reading, only: [:show]
 
@@ -30,6 +29,6 @@ class ReadingsController < ApplicationController
   end
 
   def set_reading
-    @reading = Reading.find(params[:id])
+    @reading = Reading.find_by_tracking_number(params[:id])
   end
 end
