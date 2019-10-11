@@ -1,4 +1,5 @@
 class ReadingsController < ApplicationController
+  
   before_action :set_thermostat
   before_action :set_reading, only: [:show]
 

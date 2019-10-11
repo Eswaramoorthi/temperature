@@ -19,6 +19,10 @@ gem 'sequenced'
 gem 'sidekiq'
 
 gem 'pg'
+#gem 'redis', '~> 4.1.3'
+gem 'redis', '>= 4.1.3'
+gem 'redis-rails'
+
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

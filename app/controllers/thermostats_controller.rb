@@ -1,4 +1,5 @@
 class ThermostatsController < ApplicationController
+	
     before_action :set_thermostat, only: [:show]
     
 	def show
